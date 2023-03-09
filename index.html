@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Studio Design</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,17 +12,17 @@
 </head>
 <body class="body">
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="header_container _container">
                 <div class="logo"><a href="index.html">IC "Repair Design Project"</a></div>
                 <nav class="navigation">
                     <ul class="header_navigation">
-                        <li class="header_navigation_item"><a class="item_link" href="#">HOME</a></li>
-                        <li class="header_navigation_item"><a class="item_link" href="#">PROJECTS</a></li>
-                        <li class="header_navigation_item"><a class="item_link" href="#">MEASUREMENT</a></li>
-                        <li class="header_navigation_item"><a class="item_link" href="#">TEAM</a></li>
-                        <li class="header_navigation_item"><a class="item_link" href="#">REVIEWS</a></li>
-                        <li class="header_navigation_item"><a class="item_link" href="#">CONTACTS</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#home">HOME</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#project">PROJECTS</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#measurement">MEASUREMENT</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#team">TEAM</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#reviews">REVIEWS</a></li>
+                        <li class="header_navigation_item"><a class="item_link" href="#contacts">CONTACTS</a></li>
                     </ul>
                 </nav>
                 <a href="tel:+7 (928) 768-32-39" title="number" class="header_contact contact">+7 (928) 768-32-39</a>
@@ -30,17 +30,17 @@
                     <button class="button">Request a call</button>
                 </form>
             </div>
-        </div>
+        </header>
         <main class="main">
             <section class="start">
                 <div class="background_start">
-                    <div class="start_container _container">
+                    <div id="home" class="start_container _container">
                         <h1 class="start_tittle">
                             Turnkey Repair in the <br>city of <span class="tittle_rostov">Rostov-on-Don</span>
                         </h1>
                         <p class="start_text">
-                            Get ready-made turnkey repairs on time<br>
-                            with work time saving up to 45 days and 20% from<br>
+                            Get ready-made turnkey repairs on time
+                            with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work
                         </p>
                         <div class="start_buttons">
@@ -55,7 +55,7 @@
                 </div>
             </section>
             <section class="slider">
-                <div class="slider_container">
+                <div id="project" class="slider_container">
                     <div class="slider_base">
                         <div class="base_info">
                             <h2 class="info_tittle">Completed projects</h2>
@@ -63,6 +63,10 @@
                                Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction<br> 
                                market we have made happy more than 1000 families
                             </p>
+                            <div class="slide_mobile">
+                                <img class="arrow_mobile" src="./image/mobile_arrow_left.svg" alt="">
+                                <img class="arrow_mobile" src="./image/mobile_arrow_right.svg" alt="">
+                            </div>
                             <div class="first_text">
                                 <div class="text_1">
                                     <h3 class="base_subtittle">City:</h3>
@@ -133,7 +137,7 @@
                             <input class="input" type="test" placeholder="Your phone number:">
                         </form>
                         <form action="">
-                            <button type="button" class="button_input_submit">SUBMIT</button>
+                            <button type="button" class="button_input_submit">SUMBIT</button>
                         </form>
                     </div>
                     <div class="checkbox_personal">
@@ -214,7 +218,7 @@
                 </div>
             </section>
             <section class="measurement">
-                <div class="measurement_container">
+                <div id="measurement" class="measurement_container">
                     <div class="background_steps">
                         <div class="steps">
                             <div class="step">
@@ -274,12 +278,12 @@
                                     <input class="input_request input" type="test" placeholder="Your email">
                                 </form>
                             </div>
-                            <div class="checkbox_personal_recording">
+                            <div class="checkbox_personal_2">
                                 <label class="label">
                                     <input type="checkbox" id="checkbox" class="checkbox" value="yes">
                                     <span class="fake"></span>
                                 </label>
-                                <p class="checkbox_text_recording">I agree to the processing of personal <br>data</p>
+                                <p class="checkbox_text_2">I agree to the processing of personal <br>data</p>
                             </div>
                             <form action="">
                                 <button class="button_recording">Call the measurer</button>
@@ -301,7 +305,7 @@
                                 We realize your<br>
                                 wildest fantasies 
                             </h3>
-                            <ul>
+                            <ul class="fantastic_choise">
                                 <li class="choise_list">American classic</li>
                                 <li class="choise_list">Empire</li>
                                 <li class="choise_list">Classical</li>
@@ -326,13 +330,157 @@
                             <img src="./image/fantastic_4.png" alt="">
                             
                         </div>
-
                     </div>
                 </div>
-                
             </section>
-            
+            <section class="team">
+                <div id="team" class="team_container">
+                    <div class="our_clients">
+                        <h3 class="tittle_clients">our clients</h3>
+                        <div class="logo_clients">
+                            <img src="./image/control_line.svg" alt="">
+                            <img src="./image/our_clients.svg" alt="">
+                            <img src="./image/control_line.svg" alt="">
+                        </div>
+                        <p class="our_text">
+                            80% of our customers recommend us to their<br>
+                            friends and family.
+                        </p>
+                    </div>
+                    <div class="team_people">
+                        <div class="card_people">
+                            <div class="name_people">
+                                <img src="./image/fedosova_maria.svg" alt="">
+                                <h3 class="tittle_name">Fedosova Maria<br>
+                                    Konstantinovna</h3>
+                            </div>
+                            <p class="card_people_text">
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and <br>approach.<br>
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                            <form action="">
+                                <button class="card_people_button">
+                                    <img src="./image/button_people_1.svg" alt="">
+                                    <span class="people_button_text">40 m2</span>
+                                    <img src="./image/button_people_2.svg" alt="">
+                                    <img src="./image/button_people_3.svg" alt="">
+                                    <span class="people_button_text">48 DAYS</span>   
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card_people">
+                            <div class="name_people">
+                                <img src="./image/afanasyev_sergey.svg" alt="">
+                                <h3 class="tittle_name">Afanasyev Sergey<br> 
+                                    Alexandrovich</h3>
+                            </div>
+                            <p class="card_people_text">
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and <br>approach.<br>
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                            <form action="">
+                                <button class="card_people_button">
+                                    <img src="./image/button_people_1.svg" alt="">
+                                    <span class="people_button_text">90 м2</span>
+                                    <img src="./image/button_people_2.svg" alt="">
+                                    <img src="./image/button_people_3.svg" alt="">
+                                    <span class="people_button_text">128 DAYS</span>   
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card_people">
+                            <div class="name_people">
+                                <img src="./image/kiriev_egor.svg" alt="">
+                                <h3 class="tittle_name">Kiriev Egor<Br> 
+                                    Leonidovich</h3>
+                            </div>
+                            <p class="card_people_text">
+                                I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project 
+                                to Georgia for its professionalism and <br>approach.<br>
+                                The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                            </p>
+                            <form action="">
+                                <button class="card_people_button">
+                                    <img src="./image/button_people_1.svg" alt="">
+                                    <span class="people_button_text">56 м2</span>
+                                    <img src="./image/button_people_2.svg" alt="">
+                                    <img src="./image/button_people_3.svg" alt="">
+                                    <span class="people_button_text">86 DAYS</span>   
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="city">
+                        <img src="./image/team_city_mirror.svg" alt="">
+                        <img src="./image/team_city.svg" alt="">   
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div id="reviews" class="questions_container">
+                    <h3 class="questions_tittle">have any questions?</h3>
+                    <div class="questions_inputs">
+                        <form action="">
+                            <p class="request_text_input text_input">Name</p>
+                            <input class="input_question input" type="test" placeholder="What is your name:">
+                        </form>
+                        <form action="">
+                            <p class="request_text_input text_input">Phone</p>
+                            <input class="input_question input" type="test" placeholder="Your phone number:">
+                        </form>
+                    </div>
+                    <div class="questions_inputs_3">
+                        <form action="">
+                            <p class="request_text_input text_input">Question</p>
+                            <input class="input_question_3 input" type="test" placeholder="I want to know:">
+                        </form>
+                    </div>
+                    <div class="checkbox_personal_2">
+                        <label class="label">
+                            <input type="checkbox" id="checkbox" class="checkbox" value="yes">
+                            <span class="fake"></span>
+                        </label>
+                        <p class="checkbox_text_2">I agree to the processing of personal <br>data</p>
+                    </div>
+                    <form action="">
+                        <button type="button" class="button_input_submit submit_questions">SUBMIT</button>
+                    </form>
+                </div>
+            </section>
+            <section class="finish">
+                <div id="contacts" class="finish_container">
+                    <h3 class="finish_tittle">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+                        Decorum Tel +7 (928) 768 32 29</h3>
+                    <div class="finish_icons">
+                        <img src="./image/icon_mail.svg" alt="">
+                        <img src="./image/icon_inst.svg" alt="">
+                    </div>
+                    <img src="./image/finish_map.png" alt="">
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer_container _container">
+                <div class="logo"><a href="index.html">IC "Repair Design Project"</a></div>
+                <nav class="navigation">
+                    <ul class="footer_navigation">
+                        <li class="footer_navigation_item"><a class="item_link" href="#home">HOME</a></li>
+                        <li class="footer_navigation_item"><a class="item_link" href="#project">PROJECTS</a></li>
+                        <li class="footer_navigation_item"><a class="item_link" href="#measurement">MEASUREMENT</a></li>
+                        <li class="footer_navigation_item"><a class="item_link" href="#team">TEAM</a></li>
+                        <li class="footer_navigation_item"><a class="item_link" href="#reviews">REVIEWS</a></li>
+                        <li class="footer_navigation_item"><a class="item_link" href="#contacts">CONTACTS</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+7 (928) 768-32-39" title="number" class="footer_contact contact">+7 (928) 768-32-39</a>
+                <form>
+                    <button class="button">Request a call</button>
+                </form>
+            </div>
+
+        </footer>
     </div>
     
 </body>
