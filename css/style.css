@@ -1,6 +1,7 @@
 
 
 .body {
+    margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     
 }
@@ -915,6 +916,7 @@
 }
 @media screen and (max-width: 480px) {
     body, html {
+        margin: 0;
         overflow-x: hidden;
     }
     .navigation, .button {
@@ -1098,6 +1100,7 @@
     }
     .input {
         width: 340px;
+        color: white;
         border-color: rgba(255, 255, 255, 1);
     }
     .input::placeholder {
