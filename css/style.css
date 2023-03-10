@@ -914,6 +914,9 @@
     display: none;
 }
 @media screen and (max-width: 480px) {
+    body, html {
+        overflow-x: hidden;
+    }
     .navigation, .button {
         display: none;
     }
